@@ -6,7 +6,7 @@ driver = webdriver.Chrome()
 
 driver.get(url)
 
-input_element = driver.find_element_by_id()
-click_element = driver.find_element_by_id()
-
+input_element = driver.find_element_by_id("kw")
+click_element = driver.find_element_by_id("su")
+input_element.send_keys("黑洞")
 click_element.click()
